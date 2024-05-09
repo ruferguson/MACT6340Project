@@ -20,7 +20,29 @@ h5 {
   font-size: 28px;
 }
 
-div {
-  /* border: 1px solid lightseagreen; */
+/* use this to see where border, padding, margin is located */
+.div {
+  /* padding: 1px solid red;
+  border: 2px solid orange;
+  margin: 3px solid yellow; */
 }
 
+.card-body {
+  padding-top: 2;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.card-title {
+  margin: 2;
+}
+
+.card-text {
+  margin: 2;
+}
+
+.btn-primary {
+  background-color: teal;
+  border-color: teal;
+}
