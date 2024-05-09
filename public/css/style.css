@@ -7,6 +7,14 @@ html {
     box-sizing: inherit;
 }
 
+header {
+  border: 0;
+}
+
+body {
+    font-family: "DM Serif Text", serif; 
+}
+
 div {
   border: 1px solid lightseagreen;
 }
