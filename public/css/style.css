@@ -20,6 +20,10 @@ h5 {
   font-size: 28px;
 }
 
+.navbar .nav-item a {
+  color: teal;
+}
+
 /* use this to see where border, padding, margin is located */
 .div {
   /* padding: 1px solid red;
