@@ -20,9 +20,9 @@
 
   function sendTheEmail() {
     console.log("Contact submit button was clicked.");
-    let name = document.querySelector("#name").value;
-    let email = document.querySelector("#mail").value;
-    let message = document.querySelector("#msg").value;
+    let name = document.querySelector("#firstName").value;
+    let email = document.querySelector("#inputEmail").value;
+    let message = document.querySelector("#inputMessage").value;
     console.log("Name: " + name);
     console.log("Email: " + email);
     console.log("Message: " + message);
