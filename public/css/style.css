@@ -24,9 +24,10 @@ h5 {
   color: teal;
 }
 
-#input-message {
+#inputMessage {
   border: 2px dotted;
   border-color: dimgrey;
+  margin-top: 2%;
 }
 
 .form-floating {
@@ -39,6 +40,7 @@ h5 {
   border-color: dimgrey;
   border-radius: 0px;
   text-align: left;
+  margin-top: 2%;
 }
 
 .form-control::placeholder {
