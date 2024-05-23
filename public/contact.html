@@ -21,6 +21,71 @@
 </head>
 
 <body>
+  <!-- <div id="container">
+    <div class="z-n1 position-absolute" style="font-size: 40px; color: aqua; white-space: nowrap;">ntact contact contact contact contact contact contact contact contact contact contact contact</div>
+    <div class="z-n1 position-absolute" style="font-size: 40px; color: aqua; white-space: nowrap; top: 40px;">act contact contact contact contact contact contact contact contact contact contact</div>
+    <div class="z-n1 position-absolute" style="font-size: 40px; color: aqua; white-space: nowrap; top: 80px;">contact contact contact contact contact contact contact contact contact contact contact</div>
+    <div class="z-n1 position-absolute" style="font-size: 40px; color: aqua; white-space: nowrap; top: 120px">ntact contact contact contact contact contact contact contact contact contact contact contact</div>
+    <div class="z-n1 position-absolute" style="font-size: 40px; color: aqua; white-space: nowrap; top: 160px;">act contact contact contact contact contact contact contact contact contact contact</div>
+    <div class="z-n1 position-absolute" style="font-size: 40px; color: aqua; white-space: nowrap; top: 200px;">contact contact contact contact contact contact contact contact contact contact contact</div>
+  </div> -->
+
+  <div class="container mt-1">
+    <div class="repeating-text-background z-n1">
+      <div class="row" style="text-align: center;">
+        <h1 style="padding-top: 100px; text-align: center; font-size: 100px">contact</h1>
+      </div>
+      <div class="row">
+        <form class="position-relative" id="contact-form">
+          <div class="row my-3 justify-content-center">
+            <div class="col"></div>
+            <div class="col">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingFirstName" placeholder="first name"
+                  aria-label="first name" style="justify-content: center;">
+                <label for="floatingFirstName">first name</label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-floating">
+                <input type="text" class="form-control" id="floatingLastName" placeholder="last name"
+                  aria-label="last name">
+                <label for="floatingLastName">last name</label>
+              </div>
+            </div>
+            <div class="col"></div>
+          </div>
+          <div class="row mb-4 justify-content-center">
+            <div class="col-6">
+              <div class="form-floating">
+                <input type="email" class="form-control" placeholder="example@mail.com" id="input-email"
+                  aria-describedby="emailHelp">
+                <label for="input-email">email address</label>
+                <div id="validationServer03Feedback" class="invalid-feedback">
+                  invalid email, please check your entry
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3 justify-content-center">
+            <div class="col-6">
+                <textarea class="form-control solid-border" placeholder="your message here . . ." id="input-message" rows="3"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3 justify-content-center">
+            <div class="col-6">
+              <button id="contact-form-button" type="submit" class="btn btn-primary">Submit</button>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
   <header style="font: serif">
     <nav class="navbar navbar-collapse navbar-right navbar-light fixed-top bg-light py-2">
       <a class="navbar-brand py-2 px-4 align-middle" href="/index.html">
@@ -36,31 +101,9 @@
       </ul>
   </header>
 
-  <div style="padding-top: 100px; text-align:center; font-size: 100px">contact</div>
-
-  <form id="contact-form">
-    <div class="row mx-5 my-3">
-      <div class="col">
-        <input type="text" class="form-control" placeholder="first name" aria-label="First name">
-      </div>
-      <div class="col">
-        <input type="text" class="form-control" placeholder="last name" aria-label="Last name">
-      </div>
-    </div>
-    <div class="mb-3 row mx-5">
-      <label for="exampleInputEmail1" class="form-label">email address</label>
-      <input type="email" class="form-control" placeholder="email" id="exampleInputEmail1" aria-describedby="emailHelp">
-      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-      <div id="validationServer03Feedback" class="invalid-feedback">
-        email@email.com
-      </div>
-    </div>
-    <div class="mb-3 row mx-5">
-      <label for="message" class="form-label">message</label>
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-    </div>
-    <button id="contact-form-button" type="submit" class="btn btn-primary row mx-5">Submit</button>
-  </form>
+  <!-- <div id="container">
+    <div class="z-n1 position-absolute" style="padding-top: 100px; text-align: center; font-size: 100px">contact</div>
+  </div> -->
 
   <script type="module" src="./js/index.js"></script>
   <!-- Below is the script to "install" Bootstrap into this code -->
