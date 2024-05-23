@@ -1,5 +1,7 @@
 (function () {
   "use strict";
+
+  let form = document.querySelector('#contact-form')
   
   document
     .querySelector("#contact-form-button")
