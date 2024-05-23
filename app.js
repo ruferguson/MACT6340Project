@@ -1,6 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
-import * as utils from "./utils/utils";
+import * as utils from "./utils/utils.js";
 dotenv.config();
 
 const app = express();
@@ -16,10 +16,10 @@ app.post("/mail", async (req, res) => {
   await utils
     .sendMessage(req.body.sub, req.body.txt)
     .then(() => {
-      res.send({result: "success"});
+      res.send({result: "Your message was sent successfully!"});
     })
     .catch(() => {
-      res.send({result: "failure"});
+      res.send({result: "Failure to send message."});
     });
 });
 
