@@ -21,7 +21,17 @@ h5 {
 }
 
 .spacer {
-  min-height: 100px;
+  height:calc(280px - 10vw);
+  min-height:50px; /* let's have a minimum boundary */
+  max-height:100%; /* and a maximum boundary */
+  margin:auto;
+}
+
+.half-spacer {
+  height:calc(140px - 4vw);
+  min-height:25px; /* let's have a minimum boundary */
+  max-height:100%; /* and a maximum boundary */
+  margin:auto;
 }
 
 .navbar .nav-item a {
@@ -99,6 +109,7 @@ h5 {
     margin-top: 3px;
   }
 }
+
 
 /* use this to see where border, padding, margin is located */
 /* .div {
