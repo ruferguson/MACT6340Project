@@ -78,11 +78,20 @@ h5 {
 
 .card-title {
   margin: 2;
+  font-family: Plus Jakarta Sans;
 }
 
 .card-text {
   margin: 2;
+  font-family: Plus Jakarta Sans;
 }
+
+.card-subtitle {
+  margin: 2;
+  font-family: Plus Jakarta Sans;
+  font-size: 12px;
+}
+
 
 .btn-primary {
   background-color: teal;
