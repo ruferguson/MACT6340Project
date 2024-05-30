@@ -5,21 +5,22 @@ dotenv.config();
 
 const app = express();
 const port = 3000;
+app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.static("public"));
 
-// app.get('/', (req, res) => {
-//   res.send('Hello World!')
-// })
+app.get('/', (req, res) => {
+  res.render("index.ejs");
+})
 
 app.post("/mail", async (req, res) => {
   await utils
     .sendMessage(req.body.sub, req.body.txt)
     .then(() => {
-      res.send({result: "Your message was sent successfully!"});
+      res.send({ result: "Your message was sent successfully!" });
     })
     .catch(() => {
-      res.send({result: "Failure to send message."});
+      res.send({ result: "Failure to send message." });
     });
 });
 
