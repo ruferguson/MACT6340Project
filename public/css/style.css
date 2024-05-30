@@ -20,6 +20,10 @@ h5 {
   font-size: 28px;
 }
 
+.spacer {
+  min-height: 100px;
+}
+
 .navbar .nav-item a {
   color: teal;
 }
@@ -73,6 +77,27 @@ h5 {
 .btn-primary {
   background-color: teal;
   border-color: teal;
+}
+
+/* nav bar formatting */
+@media (max-width: 767.98px) {
+  .navbar-collapse .navbar-nav.custom-center {
+      text-align: center;
+      width: 100%;
+  }
+  .navbar-collapse .navbar-nav.custom-center .nav-item {
+      width: 100%;
+  }
+  .navbar-collapse .navbar-nav.custom-center .nav-item .nav-link,
+  .navbar-collapse .navbar-nav.custom-center .nav-item .btn {
+      width: 100%;
+      display: inline-block;
+  }
+  .navbar-collapse-button {
+    width: 30%;
+    margin: auto;
+    margin-top: 3px;
+  }
 }
 
 /* use this to see where border, padding, margin is located */
