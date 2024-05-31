@@ -34,6 +34,11 @@ h5 {
   margin:auto;
 }
 
+.btn-primary {
+  background-color: teal;
+  border-color: teal;
+}
+
 .navbar .nav-item a {
   color: teal;
 }
@@ -90,12 +95,6 @@ h5 {
   margin: 2;
   font-family: Plus Jakarta Sans;
   font-size: 12px;
-}
-
-
-.btn-primary {
-  background-color: teal;
-  border-color: teal;
 }
 
 /* nav bar formatting */
