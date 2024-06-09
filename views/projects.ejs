@@ -26,7 +26,8 @@
         <div>All projects page – under construction</div>
         <% projectArray.forEach((item, index)=> { %>
             <div>
-                <a href='/project/<%= index + 1 %>'><%=item %></a>
+                <!-- <a href='/project/<%= index + 1 %>'><%=item %></a> -->
+                <%- include('projectCard', {ident: item.id, image: item.img_url, name: item.project_name}) %>
             </div>
         <% }); %>
     <script type="module" src="../js/index.js"></script>
