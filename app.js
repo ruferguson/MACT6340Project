@@ -41,7 +41,7 @@ app.get("/contact", (req, res) => {
 });
 
 app.get('/index', (req, res) => {
-  res.render("index.ejs");
+  res.render("index.ejs", {projectArray: projects});
 });
 
 app.post("/mail", async (req, res) => {
