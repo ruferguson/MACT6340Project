@@ -19,7 +19,10 @@ app.get('/', async (req, res, next) => {
       // query the database for project records
       projects = await db.getAllProjects();
       console.log(projects);
-      res.render("index.ejs", {projectArray: data});
+      var randomNumber = Math.floor(Math.random() * projects.length);
+      console.log(randomNumber);
+
+      res.render("index.ejs", {projectArray: data, featuredId: randomNumber});
     })
     .catch(next);
 });
