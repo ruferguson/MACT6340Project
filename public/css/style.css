@@ -44,8 +44,9 @@ h5 {
   background-color: teal;
   border-color: teal;
 }
-.btn-primary:hover {
+.btn-primary:hover, focus, active {
   background-color: lightseagreen;
+  border-color: lightseagreen;
   color: white;
 }
 
@@ -54,9 +55,9 @@ h5 {
   border-color: teal;
   color: white;
 }
-
-.btn-sm:hover {
+.btn-sm:hover, focus, active {
   background-color: lightseagreen;
+  border-color: lightseagreen;
   color: white;
 }
 
@@ -68,6 +69,11 @@ h5 {
   border: 2px dotted;
   border-color: dimgrey;
   margin-top: 2%;
+}
+
+.proj-title {
+  font-family: "DM Serif Text";
+  font-size: calc(.75rem + 3vw);
 }
 
 /* form formatting */
@@ -108,12 +114,12 @@ h5 {
 
 .feat-card-title {
   margin: 2;
-  font-family: Plus Jakarta Sans;
+  font-family: "DM Serif Text";
   font-size: calc(1.8rem + 0.28vw);
 }
 
 .card-title {
-  font-family: Plus Jakarta Sans;
+  font-family: "DM Serif Text";
   font-size: calc(1.25rem + 0.28vw);
 }
 

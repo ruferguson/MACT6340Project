@@ -36,7 +36,7 @@ app.get("/projects", (req, res) => {
 app.get("/project/:id", (req, res, next) => {
   const id = req.params.id;
   if (id >= 0 && id < projects.length) {
-    res.render("project.ejs", { projectArray: projects, which: id });
+    res.render("project.ejs", { projectArray: projects, thisProj: projects[id]});
   } else {
     const err = new Error("No project found with that ID");
     next(err);
