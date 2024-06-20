@@ -43,6 +43,13 @@
             <div class="pt-0 mt-0 pb-5 mb-5 row justify-content-center rounded">
                 <div class="col mt-0 text-center justify-content-center">
                     <div class="d-flex justify-content-center"> <!-- Added wrapper -->
+                        <%- include('projectCard', {ident: featuredProj.id, image: featuredProj.img_url, name: featuredProj.project_name}); %>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-0 mt-0 pb-5 mb-5 row justify-content-center rounded">
+                <div class="col mt-0 text-center justify-content-center">
+                    <div class="d-flex justify-content-center"> <!-- Added wrapper -->
                         <div class="card mb-5 pb-4" style="width: 18rem;">
                             <img class="card-img-top" src="../images/featured.JPG" alt="Card image cap">
                             <div class="card-body text-center">
@@ -125,10 +132,6 @@
                 </div>
             </div>
         </main>
-
-        <div class="container">
-            <h1>Random Project ID is: <%= featuredId %></h1>
-        </div>
 
         <%- include('footer'); %>
 
