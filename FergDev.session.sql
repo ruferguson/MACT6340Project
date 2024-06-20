@@ -1,1 +1,1 @@
-select * from projects;
+select * from filler;

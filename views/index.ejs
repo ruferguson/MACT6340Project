@@ -23,6 +23,7 @@
 <body>
     <%- include('header'); %>
         <main class="container">
+            <!-- SPLASH PAGE -->
             <div id="home" class="spacer"></div>
             <div class="row">
                 <div class="col">
@@ -33,8 +34,10 @@
                     <h1>You smell like you want some NFTs</h1>
                 </div>
             </div>
-            <div class="spacer"></div>
+            <div class="half-spacer"></div>
+            <!-- FEATURED PROJECT -->
             <div id="featured" class="rounded"></div> <!-- filler and anchor divider-->
+            <div class="half-spacer"></div>
             <div class="row justify-content-center rounded">
                 <div class="col mb-0 pb-0 text-center justify-content-center">
                     <h1>Featured Project</h1>
@@ -47,21 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="pt-0 mt-0 pb-5 mb-5 row justify-content-center rounded">
-                <div class="col mt-0 text-center justify-content-center">
-                    <div class="d-flex justify-content-center"> <!-- Added wrapper -->
-                        <div class="card mb-5 pb-4" style="width: 18rem;">
-                            <img class="card-img-top" src="../images/featured.JPG" alt="Card image cap">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Snow Day</h5>
-                                <p class="card-text" style="font-family: Plus Jakarta Sans">Ru Ferguson</p>
-                                <a href="/project" class="btn btn-primary mb-2">Project Details</a>
-                                <a href="/projects" class="btn btn-outline-dark px-2 py-1">See All Projects</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!-- ABOUT SECTION -->
             <div id="about" class="p-4 m-5 rounded"></div> <!-- filler and anchor divider-->
             <div class="row pt-5 mt-5 mb-0 text-center justify-content-center">
                 <h1>About the Artist</h1>
@@ -86,6 +75,7 @@
                     </a>
                 </div>
             </div>
+            <!-- EXAMPLE PROJECTS SECTION -->
             <div id="projects" class="p-4 m-5 rounded"></div> <!-- filler and anchor divider-->
             <div class="container-fluid mt-1">
                 <div class="row mb-0 text-center justify-content-center align-items-center">
@@ -131,16 +121,15 @@
                     </div>
                 </div>
             </div>
+            <div class="half-spacer"></div>
         </main>
 
-        <%- include('footer'); %>
-
-
-            <!-- Below is the script to "install" Bootstrap into this code -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-                crossorigin="anonymous"></script>
-            <script type="module" src="../js/index.js"></script>
+    <%- include('footer'); %>
+    <!-- Below is the script to "install" Bootstrap into this code -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script type="module" src="../js/index.js"></script>
 </body>
 
 </html>
