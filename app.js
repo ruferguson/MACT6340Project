@@ -30,7 +30,7 @@ app.get('/', async (req, res, next) => {
 });
 
 app.get("/projects", (req, res) => {
-  res.render("projects.ejs", { projectArray: projects });
+  res.render("projects.ejs", { projects: projects });
 });
 
 app.get("/project/:id", (req, res, next) => {
