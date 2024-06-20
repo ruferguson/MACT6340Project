@@ -18,7 +18,6 @@ app.get('/', async (req, res, next) => {
     .then(async() => {
       // query the database for project records
       projects = await db.getAllProjects();
-      console.log(projects);
       var randomNumber = Math.floor(Math.random() * projects.length);
       res.render("index.ejs", {projectArray: data, featuredProj: projects[randomNumber]});
     })
@@ -42,7 +41,8 @@ app.get("/contact", (req, res) => {
 });
 
 app.get('/index', (req, res) => {
-  res.render("index.ejs", {projectArray: projects});
+  var randomNumber = Math.floor(Math.random() * projects.length);
+  res.render("index.ejs", {projectArray: data, featuredProj: projects[randomNumber]});
 });
 
 app.post("/mail", async (req, res) => {

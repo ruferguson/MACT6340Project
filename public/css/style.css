@@ -20,6 +20,12 @@ h5 {
   font-size: 28px;
 }
 
+.align-bottom-right {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
 .spacer {
   height:calc(280px - 10vw);
   min-height:50px; /* let's have a minimum boundary */
@@ -49,6 +55,8 @@ h5 {
   margin-top: 2%;
 }
 
+/* form formatting */
+
 .form-floating {
   color:rgba(105, 105, 105, 0.6);
 }
@@ -74,6 +82,8 @@ h5 {
   color: rgb(175, 175, 175);
 }
 
+/* card formatting */
+
 .card-body {
   padding-top: 2;
   padding-bottom: 0;
@@ -89,6 +99,7 @@ h5 {
 .card-text {
   margin: 2;
   font-family: Plus Jakarta Sans;
+  font-size: calc(.8rem + 0.28vw);
 }
 
 .card-subtitle {
@@ -124,35 +135,5 @@ h5 {
   padding: 1px solid red;
   border: 2px solid orange;
   margin: 3px solid yellow; 
-} */
-
-/* .repeating-text-background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 100%;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-      z-index: -1;
-}
-.repeating-text-background::before {
-  content: 'ntact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact contact';
-  position: absolute;
-  padding: 0;
-  left: -20%;
-  right: 100%;
-  width: 300%;
-  height: 200%;
-  background: linear-gradient(transparent, transparent) repeat;
-  font-size: 50px;
-  color: rgba(0, 0, 0, 0.1);
-  line-height: 40px;
-  z-index: 1;
-}
-.content {
-  position: relative;
-  z-index: 2;
-  padding: 0;
 } */
 
