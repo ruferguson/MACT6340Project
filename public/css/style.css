@@ -44,6 +44,21 @@ h5 {
   background-color: teal;
   border-color: teal;
 }
+.btn-primary:hover {
+  background-color: lightseagreen;
+  color: white;
+}
+
+.btn-sm {
+  background-color: teal;
+  border-color: teal;
+  color: white;
+}
+
+.btn-sm:hover {
+  background-color: lightseagreen;
+  color: white;
+}
 
 .navbar .nav-item a {
   color: teal;
@@ -91,15 +106,21 @@ h5 {
   text-align: center;
 }
 
-.card-title {
+.feat-card-title {
   margin: 2;
   font-family: Plus Jakarta Sans;
+  font-size: calc(1.8rem + 0.28vw);
+}
+
+.card-title {
+  font-family: Plus Jakarta Sans;
+  font-size: calc(1.25rem + 0.28vw);
 }
 
 .card-text {
   margin: 2;
   font-family: Plus Jakarta Sans;
-  font-size: calc(.8rem + 0.28vw);
+  font-size: calc(0.8rem + 0.3vw);
 }
 
 .card-subtitle {
