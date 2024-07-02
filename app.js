@@ -4,8 +4,9 @@ import * as utils from "./utils/utils.js";
 import * as db from "./utils/database.js";
 
 dotenv.config();
-
+import cors from "cors";
 const app = express();
+app.use(cors());
 const port = 3000;
 
 let projects = [];
@@ -65,6 +66,17 @@ app.post("/mail", async (req, res) => {
     res.send({ result: "Failure to send message." });
   }
 });
+
+// custom 404
+app.use((req, res, next) => {
+  res.status(404).render("error.ejs")
+})
+
+// custom error handler
+app.use((err, req, res, next) => {
+  console.error(err.stack)
+  res.status(500).render("error.ejs")
+})
 
 app.use((err, req, res, next) => {
   console.error(err);
