@@ -83,6 +83,17 @@ app.use((err, req, res, next) => {
   res.render("error.ejs");
 });
 
+app.use(async (err, req, res, next) => {
+  console.log(err);
+  let msg;
+  msg = err.message;
+  if (msg != "No project with that ID") {
+    msg = 
+      "There was an internal error. Apologies. We are working to clean up the mess."
+  }
+  res.render("error.ejs", {msg: msg});
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
